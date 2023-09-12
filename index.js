@@ -10,7 +10,7 @@ program
   .option('-e, --email <type>', 'user email')
   .option('-p, --phone <type>', 'user phone');
 
-program.parse(process.argv);
+program.parse();
 const options = program.opts()
 
 const invokeAction = async ({ action, id, name, email, phone }) => {
